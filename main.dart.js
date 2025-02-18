@@ -94914,16 +94914,20 @@ r.a1C$=new A.adb(A.aM(i))
 j.D(j,new A.SJ(new A.acv(),new A.acw(q),null,null,null))
 q.c=r},
 Ep(a,b){return this.aBR(a,b)},
-aBR(a,b){var s=0,r=A.L(t.lG),q,p=this,o
+aBR(a,b){var s=0,r=A.L(t.lG),q,p=this,o,n
 var $async$Ep=A.F(function(c,d){if(c===1)return A.I(d,r)
-while(true)switch(s){case 0:o=p.b
-o===$&&A.b()
+while(true)switch(s){case 0:n=p.b
+n===$&&A.b()
 s=3
-return A.H(o.CO(a,b),$async$Ep)
-case 3:o=d
-p.d=o
+return A.H(n.CO(a,b),$async$Ep)
+case 3:p.d=d
+o=document.cookie
+n=o==null?null:o.length!==0
+if(n===!0){n=self.window.localStorage
 o.toString
-q=o
+n.setItem("cookieFallback",o)}n=p.d
+n.toString
+q=n
 s=1
 break
 case 1:return A.J(q,r)}})
